@@ -24,14 +24,14 @@
       .container {
         border: 3px solid;
       }
-      .bordureRouge {
+      /* .bordureRouge {
         border: 3px solid red;
         padding: 10px;
       }
       .bordureVerte {
         border: 3px solid green;
         padding: 10px;
-      }
+      } */
     </style>
     <link rel="stylesheet" href="styleAPropos.css" />
   </head>
@@ -40,7 +40,7 @@
         <div class="row  align-items-center">
             <div class="col  d-flex justify-content-center">
                     <a href="" class="navbar-brand fw-bold text-uppercase">
-                            <img src="logo-boulangerie.png" alt="" width="50" height="50"></a>
+                            <img src="./img/logo-boulangerie.png" alt="" width="50" height="50"></a>
             </div>
             <div class="col  ">
                  <form class="d-flex" role="search">
@@ -82,19 +82,23 @@
         
     </header>
     <main>
+
+      <div class="row bordureRouge">
+        <div class="col bordureVerte"></div>
+      </div>
       
       <section class="bg-skyblue">
         <h1 class="text-center p-5"> <a href="" class="link-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-</svg></a> A Propos</h1>
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg></a> A Propos</h1>
         <img
-          src="photo-1599819055803-717bba43890f.avif"
+          src="./img/photo-1599819055803-717bba43890f.avif"
           alt="imagea Propos"
           class="w-100 rounded-3 shadow px-5 border-3"
         />
       </section>
-      <section class="my-5 pe-3 float-end">
-        <div class="card mb-3" style="max-width: 540px">
+      <section class="my-5 pe-3 flex-col ">
+        <div class="card mb-3 " style="max-width: 540px">
           <div class="row g-0">
             <div class="col -md-4"></div>
             <div class="col-md-8 border-3">
@@ -115,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="my-5 ps-3 float-start">
+      <section class="my-5 ps-3 ">
         <div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
             <div class="col -md-4"></div>
@@ -137,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="my-5 pe-3 float-end">
+      <section class="my-5 pe-3 ">
         <div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
             <div class="col -md-4"></div>
@@ -159,7 +163,7 @@
           </div>
         </div>
       </section>
-      <section class="my-5 ps-3 float-start">
+      <section class="my-5 ps-3 ">
         <div class="card mb-3" style="max-width: 540px">
           <div class="row g-0">
             <div class="col -md-4"></div>
@@ -187,7 +191,7 @@
             <div class="row bordureRouge bg-oceanblue">
                 <div class="col bordureVerte d-flex justify-content-center flex-column ">
                     <a href="" class="navbar-brand fw-bold text-uppercase text-center   ">
-                        <img src="/logo-boulangerie.png" alt="" width="100" height="100"></a>
+                        <img src="./img/logo-boulangerie.png" alt="" width="100" height="100"></a>
                     <p class="fw-bold text-uppercase color-gold text-center">
                         Merci de partager avec nous l’amour du pain frais et des traditions françaises. Boulangerie,
                         votre
@@ -219,7 +223,7 @@
                     </ul>
                 </div>
                 <div class="col bordureVerte d-flex justify-content-center">
-                    <img src="/map.png" width="250" alt="">
+                    <img src="./img/map.png" width="250" alt="">
                 </div>
             </div>
         </div>
