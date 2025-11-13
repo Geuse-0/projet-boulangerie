@@ -1,0 +1,49 @@
+footer {
+    background-color: #1A2E63;
+    color: #C8A955;
+}
+
+
+header {
+    background-color: #1A2E63;
+}
+
+nav,
+a {
+    color: #C8A955;
+}
+
+h4 {
+    border: solid gray;
+    padding: 50px;
+}
+
+h6 {
+    border: solid gray;
+    padding: 50px;
+}
+
+h1 {
+    height: 90px;
+    color: black;
+    background-color: #C7DEFF !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-weight: bold;
+
+}
+
+
+img {
+    height: 200px;
+}
+
+
+.card :hover {
+    cursor: pointer;
+    transform: scale(1.05);
+
+
+}

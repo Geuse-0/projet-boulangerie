@@ -21,63 +21,89 @@
 </head>
 <body></body>
 <body>
-<header class="bg-oceanblue">
-        <div class="row bordureRouge align-items-center">
-            <div class="col bordureVerte d-flex justify-content-center">
-                    <a href="" class="navbar-brand fw-bold text-uppercase">
-                            <img src="/img/logo-boulangerie.png" alt="" width="50" height="50"></a>
-            </div>
-            <div class="col bordureVerte ">
-                 <form class="d-flex" role="search">
-                                        <input class="form-control me-2 " type="search" placeholder="Recherche"
-                                            aria-label="Search" />
-                                        <button class="btn btn-outline-success color-gold color-outline-color-gold"
-                                            type="submit">Rechercher</button>
-            </div>
-            <div class="col bordureVerte d-flex justify-content-center">
-                <i data-lucide="shopping-cart" class="color-gold"></i>
-            </div>
-        </div>
-        <div class="row bordureRouge ">
-            <nav class="">
-                <ul class="navbar list-unstyled d-flex justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Accueil.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Produits.html">Produits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="blog.html">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Mon-compte.html">Mon compte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Service-client.html">Service
-                            client</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="A-propos.html">A
-                            propos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-<div class=" bg-skyblue text-center">
-    <a href="Blog.html" class="">
-<i data-lucide="corner-up-left" class="float-start text-dark"></i></a>
+<header>
+  <div class="container-fluid bg-oceanblue">
+    <!-- Navbar -->
+    <div class="row bordureRouge align-items-center">
 
-    <h2 class=" fw-bold py-5">Article</h2>
-</div >
+      <!-- logo -->
+      <div class="col bordureVerte d-flex justify-content-center">
+        <a href="accueil.html" class="navbar-brand fw-bold text-uppercase">
+          <img src="/img/logo-boulangerie.png" alt="" width="75" height="75">
+        </a>
+      </div>
+
+      <!-- barre de Recherche -->
+      <div class="col bordureVerte">
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Recherche" aria-label="Search" />
+            <button class="btn btn-outline-success color-gold color-outline-color-gold" type="submit">
+              Rechercher
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- panier -->
+      <div class="col bordureVerte d-flex justify-content-center align-items-center">
+        <a href="/Panier.html"><i data-lucide="shopping-cart" class="color-gold me-3" style="width:35px; height:35px;"></i></a> 
+        <button class="navbar-toggler d-md-none border-0 bg-transparent p-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Menu">
+          <i data-lucide="menu" class="color-gold" style="width:35px; height:35px;"></i>
+        </button>
+      </div>
+
+      <!-- menu -->
+      <div class="col-12 bordureVerte d-flex justify-content-center">
+        <nav class="navbar navbar-expand-md p-0">
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav list-unstyled text-center mb-0">
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Produits.html">Produits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Mon-compte.html">Mon compte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Service-client.html">Service client</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="A-propos.html">À propos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Titre de la page -->
+  <div class="container-fluid mb-4 bg-skyblue">
+    <div class="row bordureRouge">
+      <a href="accueil.html" class="">
+        <i data-lucide="corner-up-left" class="float-start text-dark"></i>
+      </a>
+      <div class="col bordureVerte d-flex justify-content-center mb-4 bg-skyblue">
+        <h1>Titre de la page</h1>
+      </div>
+    </div>
+  </div>
+</header>
 <div class="text-center py-4">
     <img src="/img/journal.png"  class="img-fluid" alt="journal" width="1500" >
 </div>
- <footer>
-        <div class="container-fluide">
+  <footer>
+        <div class="container-fluid">
             <div class="row bordureRouge bg-oceanblue">
-                <div class="col bordureVerte d-flex justify-content-center flex-column ">
+                <div class="col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center flex-column ">
                     <a href="" class="navbar-brand fw-bold text-uppercase text-center   ">
                         <img src="/img/logo-boulangerie.png" alt="" width="100" height="100"></a>
                     <p class="fw-bold text-uppercase color-gold text-center">
@@ -87,7 +113,7 @@
                         06 11 32 05 42
                     </p>
                 </div>
-                <div class="col bordureVerte d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center align-items-center">
                     <ul class="list-unstyled fw-bold text-uppercase">
                         <li>
                             <a class=" color-gold " aria-current="page" href="Contact.html">nous contacter</a>
@@ -96,21 +122,24 @@
                             <a class=" color-gold " aria-current="page" href="Localisation.html">Localisation</a>
                         </li>
                         <li>
-                            <a class=" color-gold " aria-current="page" href="Mentions-legales.html">Mentions légales</a>
+                            <a class=" color-gold " aria-current="page" href="Mentions-legales.html">Mentions
+                                légales</a>
                         </li>
                         <li>
                             <a class=" color-gold " aria-current="page" href="#">réseaux sociaux</a>
                         </li>
                         <li>
-                            <a class=" color-gold " aria-current="page" href="Politique-de-confidantielite.html">Politique de confidantielité</a>
+                            <a class=" color-gold " aria-current="page"
+                                href="Politique-de-confidantielite.html">Politique de confidantielité</a>
                         </li>
                         <li>
-                            <a class=" color-gold " aria-current="page" href="Condition-generale-de-vente.html">Conditions générale de vente</a>
+                            <a class=" color-gold " aria-current="page"
+                                href="Condition-generale-de-vente.html">Conditions générale de vente</a>
                         </li>
 
                     </ul>
                 </div>
-                <div class="col bordureVerte d-flex justify-content-center">
+                <div class="col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center">
                     <img src="/img/map.png" width="250" alt="">
                 </div>
             </div>
