@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon espace personel</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    />
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-      .color-skyblue {
-        color: #c7deff !important;
-      }
-      .bg-skyblue {
-        background-color: #c7deff !important;
-      }
-      .bg-oceanblue {
-        background-color: #1a2e63 !important;
-      }
-      /* .bordureRouge {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon espace personel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .color-skyblue {
+      color: #c7deff !important;
+    }
+
+    .bg-skyblue {
+      background-color: #c7deff !important;
+    }
+
+    .bg-oceanblue {
+      background-color: #1a2e63 !important;
+    }
+
+    /* .bordureRouge {
         border: 3px solid;
         border-color: red;
       }
@@ -31,39 +32,43 @@
       .container {
         border: 2px solid;
       } */
-      .color-gold {
-        color: #c8a955;
-      }
-      footer {
+    .color-gold {
+      color: #c8a955;
+    }
+
+    footer {
       margin-bottom: 0;
       padding-bottom: 0;
     }
 
-    .texte:hover{
+    .texte:hover {
       color: black;
     }
-    .text-gold:hover{
+
+    .text-gold:hover {
       color: #C8A955;
     }
-    
-    .bouton{
-      color:#C8A955;
+
+    .bouton {
+      color: #C8A955;
       border: 2px solid #C8A955;
       background-color: #1A2E63;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    .bouton:hover{
+
+    .bouton:hover {
       background-color: #C7DEFF;
       color: black;
-      border:2px solid #C7DEFF;
+      border: 2px solid #C7DEFF;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
     }
-    </style>
-  </head>
-  <body>
-    <header>
+  </style>
+</head>
+
+<body>
+  <header>
     <div class="container-fluid bg-oceanblue">
       <!-- Navbar -->
       <div class="row bordureRouge align-items-center">
@@ -129,58 +134,72 @@
 
     <!-- Titre de la page -->
     <div class="container-fluid mb-4 bg-ocean">
+      <div class="row bordureRouge">
         <div class="row bordureRouge">
-          <div class="row bordureRouge">
-      <a href="accueil.html" class="">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Mon espace personel</li>
-                    </ol>
-                </nav>
-      </a>
+          <a href="accueil.html" class="">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Mon espace personel</li>
+              </ol>
+            </nav>
+          </a>
           <div class="col bordureVerte d-flex justify-content-center mb-4">
             <h1>Mon Espace Personel</h1>
           </div>
         </div>
       </div>
   </header>
-    
-    <main>
-      <section class="container">
-        <h3 class="text-center">Bonjour Eric Antoine</h3>
-      </section>
-      <section class="container p-5">
+
+  <main>
+    <section class="container">
+      <h3 class="text-center">Bonjour Eric Antoine</h3>
+    </section>
+    <section class="container p-5">
       <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed text-uppercase fw-bold bg-skyblue m-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        <p class="">Vos coordonées</p>
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque inventore quo illum aperiam non porro voluptatum perferendis obcaecati quos. Deserunt vitae possimus tenetur quasi excepturi quisquam harum dignissimos vel explicabo!</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed text-uppercase fw-bold bg-skyblue m-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        <p class="">Avantages fidelité</p>
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quam ullam non nobis, impedit maxime porro, eligendi facilis quis dolorem itaque sit. Laboriosam eos voluptatibus laudantium qui pariatur? Iste, nostrum.
-    </div>
-  </div>
-  <div class="d-grid m-4">
-    <button class="bg-skyblue" type="button"><p class="text-uppercase fw-bold">Mode de payement</p></button>
-  </div>
-  <div class="d-grid m-4">
-    <button class="bg-skyblue" type="button"><p class="text-uppercase fw-bold">se deconnecter</p></button>
-  </div>
-      
-    </main>
-    <footer>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed text-uppercase fw-bold bg-skyblue m-1" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+              aria-controls="flush-collapseOne">
+              <p class="">Vos coordonées</p>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque inventore quo
+              illum aperiam non porro voluptatum perferendis obcaecati quos. Deserunt vitae possimus tenetur quasi
+              excepturi quisquam harum dignissimos vel explicabo!</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed text-uppercase fw-bold bg-skyblue m-1" type="button"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+              aria-controls="flush-collapseTwo">
+              <p class="">Avantages fidelité</p>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quam ullam non
+              nobis, impedit maxime porro, eligendi facilis quis dolorem itaque sit. Laboriosam eos voluptatibus
+              laudantium qui pariatur? Iste, nostrum.
+            </div>
+          </div>
+          <div class="d-grid m-4">
+            <button class="bg-skyblue" type="button">
+              <p class="text-uppercase fw-bold">Mode de payement</p>
+            </button>
+          </div>
+          <div class="d-grid m-4">
+            <button class="bg-skyblue text-center"  type="button">
+              <a class="text-uppercase fw-bold text-gold" href="se-connecter.html">se deconnecter</a>
+            </button>
+          </div>
+
+  </main>
+  <footer>
     <div class="container-fluid">
       <div class="row bordureRouge bg-oceanblue pt-4">
         <div class="mb-5 col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center flex-column ">
@@ -230,9 +249,10 @@
     </div>
 
   </footer>
-  </body>
-  <script>
-    lucide.createIcons();
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+  lucide.createIcons();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
