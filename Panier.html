@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,6 @@
     <title>Bootstrap 5</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-     
-
-
         .bg-oceanblue {
             background-color: #1A2E63;
         }
@@ -22,6 +20,7 @@
         .color-gold {
             color: #C8A955;
         }
+
         .bg-blue {
             background-color: #C7DEFF;
         }
@@ -35,151 +34,268 @@
             height: 56px;
             object-fit: cover;
         }
+
+
+  /* .container-fluide {
+            border: 3px solid;
+            border-color: black;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .bordureRouge {
+            border: 3px solid;
+            border-color: red;
+        }
+
+        .bordureVerte {
+            border: 3px solid;
+            border-color: green;
+        } */
+
+
+            .bg-oceanblue {
+                background-color: #1A2E63;
+            }
+
+            .bg-oceanskyblue {
+                background-color: #C7DEFF;
+            }
+
+            .color-gold {
+                color: #C8A955;
+            }
+            .hover-dark:hover {
+    color: #000000; 
+    }
+    .bg-lightoceanblue {
+        background-color: #2b548e;
+    }
+    .hover-blue:hover {
+        background-color: #5079b2;
+    }
+
+
+
+.payment-btn {
+    width: 280px;
+    height: 70px;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    .payment-btn {
+        width: 400px;  
+        height: 100px; 
+        font-size: 1.8rem;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+html, body {
+  overflow-x: hidden;
+}
+
     </style>
 </head>
 
 
 
 <body>
-     <header class="bg-oceanblue">
-        <div class="row bordureRouge align-items-center">
-            <div class="col bordureVerte d-flex justify-content-center">
-                    <a href="" class="navbar-brand fw-bold text-uppercase">
-                            <img src="./img/logo-boulangerie.png" alt="" width="50" height="50"></a>
-            </div>
-            <div class="col bordureVerte ">
-                 <form class="d-flex" role="search">
-                                        <input class="form-control me-2 " type="search" placeholder="Recherche"
-                                            aria-label="Search" />
-                                        <button class="btn btn-outline-success color-gold color-outline-color-gold"
-                                            type="submit">Rechercher</button>
-            </div>
-            <div class="col bordureVerte d-flex justify-content-center">
-                <i data-lucide="shopping-cart" class="color-gold"></i>
-            </div>
-        </div>
-        <div class="row bordureRouge ">
-            <nav class="">
-                <ul class="navbar list-unstyled d-flex justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Accueil.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Produits.html">Produits</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="blog.html">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Mon-compte.html">Mon compte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="Service-client.html">Service
-                            client</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-gold mx-3" aria-current="page" href="A-propos.html">A
-                            propos</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="container-fluide mb-4">
-        <div class="row bordureRouge bg-ocean">
-            <a href="Accueil.html" class="">
-                <i data-lucide="corner-up-left" class="float-start text-dark"></i></a>
-            <div class="col bordureVerte d-flex justify-content-center mb-4 ">
-                <h1>
-               Mon Panier
-                </h1>
-            </div>
+
+<header>
+  <div class="container-fluid bg-oceanblue">
+    <!-- Navbar -->
+    <div class="row bordureRouge align-items-center">
+
+      <!-- logo -->
+      <div class="col bordureVerte d-flex justify-content-center">
+        <a href="accueil.html" class="navbar-brand fw-bold text-uppercase">
+          <img src="/img/logo-boulangerie.png" alt="" width="75" height="75">
+        </a>
+      </div>
+
+      <!-- barre de Recherche -->
+      <div class="col bordureVerte">
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Recherche" aria-label="Search" />
+            <button class="btn hover-blue bg-lightoceanblue color-gold color-outline-color-gold" type="submit">
+              Rechercher
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- panier -->
+      <div class="col bordureVerte d-flex justify-content-center align-items-center">
+        <a href="/Panier.html"><i data-lucide="shopping-cart" class="color-gold me-3" style="width:35px; height:35px;"></i></a> 
+        <button class="navbar-toggler d-md-none border-0 bg-transparent p-0" type="button"
+          data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Menu">
+          <i data-lucide="menu" class="color-gold" style="width:35px; height:35px;"></i>
+        </button>
+      </div>
+
+      <!-- menu -->
+      <div class="col-12 bordureVerte d-flex justify-content-center">
+        <nav class="navbar navbar-expand-md p-0">
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav list-unstyled text-center mb-0">
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Produits.html">Produits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Mon-compte.html">Mon compte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="Service-client.html">Service client</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link color-gold mx-3" href="A-propos.html">À propos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Titre de la page -->
+  <div class="container-fluid mb-4 bg-ocean">
+    <div class="row bordureRouge">
+     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item text-decoration-none"><a class="text-decoration-none text-dark"  href="#">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Service-client</li>
+                    </ol>
+                </nav>
+      <div class="col bordureVerte d-flex justify-content-center mb-4">
+        <h1>Titre de la page</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+   <main>
+    <div class="container my-5 bg-blue">
+        <div class="row justify-content-center">
+            <h2 class="text-center my-4">Vous avez 4 produits dans votre panier</h2>
+            <ul class="list-unstyled mb-0">
+
+                <!-- Produit 1 -->
+                <li class="d-flex flex-column flex-md-row align-items-center py-3 px-4 border-bottom">
+                    <!-- Image produit -->
+                    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+                        <img src="./img/baguette.jpg" class="rounded img-fluid w-75 w-md-100" alt="Baguette">
+                    </div>
+
+                    <!-- Zone prix + quantité -->
+                    <div class="col-12 col-md-8 d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-3">
+                        <!-- Prix -->
+                        <div class="prix fs-3 fw-bold text-center text-md-start">
+                            0,80 €
+                        </div>
+                        <!-- Quantité -->
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary qty-btn me-2">-</button>
+                            <div class="px-3 qty-value fs-4">1</div>
+                            <button class="btn btn-outline-secondary qty-btn ms-2">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Produit 2 -->
+                <li class="d-flex flex-column flex-md-row align-items-center py-3 px-4 border-bottom">
+                    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+                        <img src="./img/eclair.jpg" class="rounded img-fluid w-75 w-md-100" alt="Éclair">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-3">
+                        <div class="prix fs-3 fw-bold text-center text-md-start">
+                            2 €
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary qty-btn me-2">-</button>
+                            <div class="px-3 qty-value fs-4">1</div>
+                            <button class="btn btn-outline-secondary qty-btn ms-2">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Produit 3 -->
+                <li class="d-flex flex-column flex-md-row align-items-center py-3 px-4 border-bottom">
+                    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+                        <img src="./img/Croissant.jpg" class="rounded img-fluid w-75 w-md-100" alt="Croissant">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-3">
+                        <div class="prix fs-3 fw-bold text-center text-md-start">
+                            0,90 €
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary qty-btn me-2">-</button>
+                            <div class="px-3 qty-value fs-4">1</div>
+                            <button class="btn btn-outline-secondary qty-btn ms-2">+</button>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Produit 4 -->
+                <li class="d-flex flex-column flex-md-row align-items-center py-3 px-4 border-bottom">
+                    <div class="col-12 col-md-4 text-center mb-2 mb-md-0">
+                        <img src="./img/Canette.jpg" class="rounded img-fluid w-75 w-md-100" alt="Canette">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-3">
+                        <div class="prix fs-3 fw-bold text-center text-md-start">
+                            1,50 €
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-outline-secondary qty-btn me-2">-</button>
+                            <div class="px-3 qty-value fs-4">1</div>
+                            <button class="btn btn-outline-secondary qty-btn ms-2">+</button>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
     </div>
-    <main>
+
+    <!-- Paiement -->
+  <div class="text-center my-4">
+    <h2 class="fs-2 mb-3">Total : 5,20 €</h2>
+    <button type="button"
+            class="btn btn-primary bg-oceanblue text-white payment-btn">
+        Débuter le paiement
+    </button>
+</div>
 
 
-        <div class="container my-4 bg-blue">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6">
-                    <div class="card-body">
-                        <h2 class="text-center mb-3"> Vous avez 4 produits dans votre panier </h2>
-                        <ul class="list-unstyled mb-0">
+
+</main>
 
 
-                            <!-- Produit 1     -->
+    <!-- Footer  -->
 
-                            <li class="d-flex align-items-center py-2 border-bottom">
-                                <div class="me-3">
-                                    <img src="./img/baguette.jpg" class="img rounded">
-                                </div>
-                                <div class="flex-grow-1 d-flex align-items-center">
-                                    <div class="prix">0,80 €</div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-outline-secondary qty-btn">-</button>
-                                    <div class="px-2 qty-value">1</div>
-                                    <button class="btn btn-outline-secondary qty-btn">+</button>
-                                </div>
-                            </li>
-
-                            <!-- Produit 2  -->
-                             <li class="d-flex align-items-center py-2 border-bottom">
-                                <div class="me-3">
-                                    <img src="./img/eclair.jpg" class="img rounded">
-                                </div>
-                                <div class="flex-grow-1 d-flex align-items-center">
-                                    <div class="prix">2€</div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-outline-secondary qty-btn">-</button>
-                                    <div class="px-2 qty-value">1</div>
-                                    <button class="btn btn-outline-secondary qty-btn">+</button>
-                                </div>
-                            </li>
-                            
-                            <!-- Produit 3  -->
-                             <li class="d-flex align-items-center py-2 border-bottom">
-                                <div class="me-3">
-                                    <img src="./img/Croissant.jpg" class="img rounded">
-                                </div>
-                                <div class="flex-grow-1 d-flex align-items-center">
-                                    <div class="prix">0,90 €</div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-outline-secondary qty-btn">-</button>
-                                    <div class="px-2 qty-value">1</div>
-                                    <button class="btn btn-outline-secondary qty-btn">+</button>
-                                </div>
-                            </li>
-                           
-                            <!-- Produit 4  -->
-                             <li class="d-flex align-items-center py-2 border-bottom">
-                                <div class="me-3">
-                                    <img src="./img/Canette.jpg" class="img rounded">
-                                </div>
-                                <div class="flex-grow-1 d-flex align-items-center">
-                                    <div class="prix">1,50 €</div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-outline-secondary qty-btn">-</button>
-                                    <div class="px-2 qty-value">1</div>
-                                    <button class="btn btn-outline-secondary qty-btn">+</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </main>
-     <footer>
-        <div class="container-fluide">
+    <footer>
+        <div class="container-fluid">
             <div class="row bordureRouge bg-oceanblue">
-                <div class="col bordureVerte d-flex justify-content-center flex-column ">
+                <div class="mb-5 col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center flex-column ">
                     <a href="" class="navbar-brand fw-bold text-uppercase text-center   ">
-                        <img src="./img/logo-boulangerie.png" alt="" width="100" height="100"></a>
+                        <img src="/img/logo-boulangerie.png" alt="" width="100" height="100"></a>
                     <p class="fw-bold text-uppercase color-gold text-center">
                         Merci de partager avec nous l’amour du pain frais et des traditions françaises. Boulangerie,
                         votre
@@ -187,34 +303,42 @@
                         06 11 32 05 42
                     </p>
                 </div>
-                <div class="col bordureVerte d-flex justify-content-center align-items-center">
+                <div class="col-12  col-lg-4 col-md-4 bordureVerte d-flex justify-content-center align-items-center">
                     <ul class="list-unstyled fw-bold text-uppercase">
-                        <li>
-                            <a class=" color-gold " aria-current="page" href="Contact.html">nous contacter</a>
+                        <li class="mb-2">
+                            <a class=" color-gold hover-dark" aria-current="page" href="Contact.html">nous contacter</a>
                         </li>
-                        <li>
-                            <a class=" color-gold " aria-current="page" href="Localisation.html">Localisation</a>
+                        <li class="mb-2">
+                            <a class=" color-gold hover-dark" aria-current="page" href="Localisation.html">Localisation</a>
                         </li>
-                        <li>
-                            <a class=" color-gold " aria-current="page" href="Mentions-legales.html">Mentions légales</a>
+                        <li class="mb-2">
+                            <a class=" color-gold hover-dark" aria-current="page" href="Mentions-legales.html">Mentions
+                                légales</a>
                         </li>
-                        <li>
-                            <a class=" color-gold " aria-current="page" href="#">réseaux sociaux</a>
+                        <li class="mb-2">
+                            <a class=" color-gold hover-dark" aria-current="page" href="#">réseaux sociaux</a>
                         </li>
-                        <li>
-                            <a class=" color-gold " aria-current="page" href="Politique-de-confidantielite.html">Politique de confidantielité</a>
+                        <li class="mb-2">
+                            <a class=" color-gold hover-dark" aria-current="page"
+                                href="Politique-de-confidantielite.html">Politique de confidantielité</a>
                         </li>
-                        <li>
-                            <a class=" color-gold " aria-current="page" href="Condition-generale-de-vente.html">Conditions générale de vente</a>
+                        <li class="mb-2">
+                            <a class=" color-gold hover-dark" aria-current="page"
+                                href="Condition-generale-de-vente.html">Conditions générale de vente</a>
                         </li>
 
                     </ul>
                 </div>
-                <div class="col bordureVerte d-flex justify-content-center">
+                <div class="col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center">
                     <img src="/img/map.png" width="250" alt="">
                 </div>
+                <div class="text-center my-4 pt-3 small color-gold">
+    © 2025 Boulangerie — Tous droits réservés
+  </div>
             </div>
+            
         </div>
+
     </footer>
     <script>
         lucide.createIcons();
