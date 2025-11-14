@@ -4,9 +4,7 @@ footer {
 }
 
 
-header {
-    background-color: #1A2E63;
-}
+
 
 nav,
 a {
@@ -44,6 +42,5 @@ img {
 .card :hover {
     cursor: pointer;
     transform: scale(1.05);
-
 
 }
