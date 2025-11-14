@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <title>bootstrap 5</title>
+    <style>
+        .container {
+            border: 3px solid;
+        }
+
+        .bordureRouge {
+            border: 3px solid red;
+            padding: 10px;
+        }
+
+        .bordureVerte {
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+        /* .container-fluide {
+            border: 3px solid;
+            border-color: black;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .bordureRouge {
+            border: 3px solid;
+            border-color: red;
+        }
+
+        .bordureVerte {
+            border: 3px solid;
+            border-color: green;
+        } */
+
+
+        .bg-oceanblue {
+            background-color: #1A2E63;
+        }
+
+        .bg-ocean {
+            background-color: #C7DEFF;
+        }
+
+        .color-gold {
+            color: #C8A955;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <header class="bg-oceanblue">
+        <div class="row bordureRouge align-items-center">
+            <div class="col bordureVerte d-flex justify-content-center">
+                <a href="" class="navbar-brand fw-bold text-uppercase">
+                    <img src="img/637a54ac-4ea3-49af-a344-8ffd9bcac19362.png" alt="" width="50" height="50"></a>
+            </div>
+            <div class="col bordureVerte ">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 " type="search" placeholder="Recherche" aria-label="Search" />
+                    <button class="btn btn-outline-success color-gold color-outline-color-gold"
+                        type="submit">Rechercher</button>
+            </div>
+            <div class="col bordureVerte d-flex justify-content-center">
+                <i data-lucide="shopping-cart" class="color-gold"></i>
+            </div>
+        </div>
+        <div class="row bordureRouge ">
+            <nav class="">
+                <ul class="navbar list-unstyled d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link color-gold mx-3" aria-current="page" href="Accueil.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-gold mx-3" aria-current="page" href="Produits.html">Produits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-gold mx-3" aria-current="page" href="blog.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-gold mx-3" aria-current="page" href="Mon-compte.html">Mon compte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-gold mx-3" aria-current="page" href="Service-client.html">Service
+                            client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-gold mx-3" aria-current="page" href="A-propos.html">A
+                            propos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section id="service">
+            <div class="row bordureRouge bg-ocean">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <h1 class="text-center">Service client</h1>
+            </div>
+
+            <div class="container my-5">
+                <div class="col bordureVerte">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-ocean " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    FAQ
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="col bordureVerte">Quels sont vos horraires?</div>
+                                    <div class="col bordureVerte">Nos artisans travaillent du lundi au samedi 10h à 19h
+                                    </div>
+                                    <div class="col bordureVerte">Livrez-vous à domicile</div>
+                                    <div class="col bordureVerte">Oui, dans un rayon de 5 km autour de la boulangerie
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-ocean" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Vos commandes
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="col bordureVerte">Suivi de commande</div>
+                                    <div class="col bordureVerte">Commande confirmé</div>
+                                    <div class="col bordureVerte">En préparation </div>
+                                    <div class="col bordureVerte">En livraison</div>
+                                    <div class="col bordureVerte">Livré</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-ocean" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Nous contacter
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">adresse mail</label>
+                                            <input type="emai" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Mot de passe</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Message </label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    se rappeler de moi
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-ocean" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                    aria-controls="flush-collapsefour">
+                                    Politique de retour
+                                </button>
+                            </h2>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">“ Les retours sont possible sous 48h après réception de la
+                                    commande, pour tout produit non consommé ”</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluide">
+            <div class="row bordureRouge bg-oceanblue">
+                <div class="col bordureVerte d-flex justify-content-center flex-column ">
+                    <a href="" class="navbar-brand fw-bold text-uppercase text-center   ">
+                        <img src="img/637a54ac-4ea3-49af-a344-8ffd9bcac19362.png" alt="" width="100" height="100"></a>
+                    <p class="fw-bold text-uppercase color-gold text-center">
+                        Merci de partager avec nous l’amour du pain frais et des traditions françaises. Boulangerie,
+                        votre
+                        plaisir quotidien.
+                        06 11 32 05 42
+                    </p>
+                </div>
+                <div class="col bordureVerte d-flex justify-content-center align-items-center">
+                    <ul class="list-unstyled fw-bold text-uppercase">
+                        <li>
+                            <a class=" color-gold " aria-current="page" href="Contact.html">nous contacter</a>
+                        </li>
+                        <li>
+                            <a class=" color-gold " aria-current="page" href="Localisation.html">Localisation</a>
+                        </li>
+                        <li>
+                            <a class=" color-gold " aria-current="page" href="Mentions-legales.html">Mentions
+                                légales</a>
+                        </li>
+                        <li>
+                            <a class=" color-gold " aria-current="page" href="#">réseaux sociaux</a>
+                        </li>
+                        <li>
+                            <a class=" color-gold " aria-current="page"
+                                href="Politique-de-confidantielite.html">Politique de confidantielité</a>
+                        </li>
+                        <li>
+                            <a class=" color-gold " aria-current="page"
+                                href="Condition-generale-de-vente.html">Conditions générale de vente</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col bordureVerte d-flex justify-content-center">
+                    <img src="/img/map.png" width="250" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
