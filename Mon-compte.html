@@ -38,11 +38,52 @@
         .color-gold {
             color: #C8A955;
         }
+        .bg-gold {
+            background-color: #C8A955;
+        }.bg-oceanblue {
+      background-color: #1A2E63;
+    }
+
+    .bg-ocean {
+      background-color: #C7DEFF;
+    }
+
+    .color-gold {
+      color: #C8A955;
+    }
+
+    footer {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .texte:hover{
+      color: black;
+    }
+    .text-gold:hover{
+      color: #C8A955;
+    }
+    
+    .bouton{
+      color:#C8A955;
+      border: 2px solid #C8A955;
+      background-color: #1A2E63;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .bouton:hover{
+      background-color: #C7DEFF;
+      color: black;
+      border:2px solid #C7DEFF;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+        
     </style>
 </head>
 
 <body>
-    <header>
+   <header>
     <div class="container-fluid bg-oceanblue">
       <!-- Navbar -->
       <div class="row bordureRouge align-items-center">
@@ -121,20 +162,24 @@
       </div>
     </div>
   </header>
-    <h2 class="ms-5 text-decoration-underline">Créer un compte :</h2>
-    <div>
+    <div class="container">
+         <h2 class="ms-5 text-decoration-underline">Créer un compte :</h2>
         <form class="m-5 p-5 bg-skyblue rounded-4">
-            <div class="row align-items-start">
-                <div class="col">
+            <div class="row align-items-start text-center">
+                <div class="col-12 col-lg-4 col-md-4">
                     <p class="fw-bold">Civilité :</p>
                 </div>
-                <div class="col">
-                    <p class="fw-bold col">homme</p><input type="checkbox">
-
+                <div class="col-12 col-lg-4 col-md-4 form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1">
+                        Homme
+                    </label>
                 </div>
-                <div class="col">
-                    <p class="fw-bold col">femme</p><input type="checkbox">
-
+                <div class="col-12 col-lg-4 col-md-4 form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                    <label class="form-check-label" for="radioDefault2">
+                        Femme
+                    </label>
                 </div>
             </div>
             <div class="mb-3 row"> <label for="nom">Nom :</label>
@@ -152,17 +197,20 @@
             <div class="mb-3 row"> <label for="adresse"> Adresse et code postale :</label>
                 <input type="type" id="adresse" class="text">
             </div>
-            
+
             <div class="mb-3 row"> <label for="creeMDP">Crée un mot de passe :</label>
                 <input type="password" id="creeMDP" class="text">
             </div>
             <div class="mb-3 row"> <label for="confirmerMDP">Confirmer le mot de passe :</label>
                 <input type="password" id="confirmerMDP" class="text">
             </div>
-            <button type="submit" class="btn btn-success w-50 float-end">se connecter </button>
+            <div class="col d-flex justify-content-center m-0">
+                <button type="submit" class="btn btn-success w-50 float-end bg-oceanblue">se connecter </button>
+            </div>
+            
         </form>
     </div>
-   <footer>
+    <footer>
     <div class="container-fluid">
       <div class="row bordureRouge bg-oceanblue pt-4">
         <div class="mb-5 col-12 col-lg-4 col-md-4 bordureVerte d-flex justify-content-center flex-column ">
