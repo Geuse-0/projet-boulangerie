@@ -38,6 +38,10 @@
         .color-gold {
             color: #C8A955;
         }
+        .bg-gold {
+            background-color: #C8A955;
+        }
+        
     </style>
 </head>
 
@@ -108,7 +112,7 @@
         </div>
 
         <!-- Titre de la page -->
-        <div class="container-fluid mb-4 bg-ocean">
+        <div class="container-fluid mb-4 bg-skyblue">
             <div class="row bordureRouge">
                 <a href="accueil.html" class="">
                     <i data-lucide="corner-up-left" class="float-start text-dark"></i>
@@ -119,20 +123,24 @@
             </div>
         </div>
     </header>
-    <h2 class="ms-5 text-decoration-underline">Créer un compte :</h2>
-    <div>
+    <div class="container">
+         <h2 class="ms-5 text-decoration-underline">Créer un compte :</h2>
         <form class="m-5 p-5 bg-skyblue rounded-4">
-            <div class="row align-items-start">
-                <div class="col">
+            <div class="row align-items-start text-center">
+                <div class="col-12 col-lg-4 col-md-4">
                     <p class="fw-bold">Civilité :</p>
                 </div>
-                <div class="col">
-                    <p class="fw-bold col">homme</p><input type="checkbox">
-
+                <div class="col-12 col-lg-4 col-md-4 form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                    <label class="form-check-label" for="radioDefault1">
+                        Homme
+                    </label>
                 </div>
-                <div class="col">
-                    <p class="fw-bold col">femme</p><input type="checkbox">
-
+                <div class="col-12 col-lg-4 col-md-4 form-check">
+                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                    <label class="form-check-label" for="radioDefault2">
+                        Femme
+                    </label>
                 </div>
             </div>
             <div class="mb-3 row"> <label for="nom">Nom :</label>
@@ -150,14 +158,17 @@
             <div class="mb-3 row"> <label for="adresse"> Adresse et code postale :</label>
                 <input type="type" id="adresse" class="text">
             </div>
-            
+
             <div class="mb-3 row"> <label for="creeMDP">Crée un mot de passe :</label>
                 <input type="password" id="creeMDP" class="text">
             </div>
             <div class="mb-3 row"> <label for="confirmerMDP">Confirmer le mot de passe :</label>
                 <input type="password" id="confirmerMDP" class="text">
             </div>
-            <button type="submit" class="btn btn-success w-50 float-end">se connecter </button>
+            <div class="col d-flex justify-content-center m-0">
+                <button type="submit" class="btn btn-success w-50 float-end bg-oceanblue">se connecter </button>
+            </div>
+            
         </form>
     </div>
     <footer>
